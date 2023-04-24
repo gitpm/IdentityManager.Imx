@@ -45,7 +45,6 @@ import { TranslateModule } from '@ngx-translate/core';
 
 import { EuiCoreModule } from '@elemental-ui/core';
 
-import { CdrRegistryService } from './cdr-registry.service';
 import { CdrEditorComponent } from './cdr-editor/cdr-editor.component';
 import { EditBooleanComponent } from './edit-boolean/edit-boolean.component';
 import { EditDefaultComponent } from './edit-default/edit-default.component';
@@ -128,9 +127,6 @@ import { EditUrlComponent } from './edit-url/edit-url.component';
     FkHierarchicalDialogModule,
     DateModule,
     ImageModule
-  ],
-  providers: [
-    CdrRegistryService
   ],
   exports: [
     CdrEditorComponent,
