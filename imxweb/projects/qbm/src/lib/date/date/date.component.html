@@ -1,6 +1,6 @@
 <mat-form-field appearance="outline">
   <mat-label>{{ display | translate }}</mat-label>
-  <input matInput [readonly]="isReadonly" [formControl]="shadowText"  (focusout)="focusout()"
+  <input matInput [readonly]="isReadonly" [formControl]="shadowText"  (focusout)="focusout()" [disabled]="isDisabled"
     [attr.data-imx-identifier]="'date-input-' + imxIdentifierSuffix" [required]="isValueRequired">
   <div matSuffix>
     <mat-spinner diameter="30" *ngIf="isLoading"></mat-spinner>
