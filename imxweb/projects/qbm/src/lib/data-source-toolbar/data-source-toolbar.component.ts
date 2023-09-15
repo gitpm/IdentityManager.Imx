@@ -479,6 +479,7 @@ export class DataSourceToolbarComponent implements OnChanges, OnInit, OnDestroy 
 
     if (changes['preSelection'] && changes['preSelection'].currentValue) {
       this.isUpdatingPreselection = true;
+      this.selection.clear();
       setTimeout(() => {
         this.preSelection.forEach((item) => this.selection.checked(item));
         this.isUpdatingPreselection = false;
